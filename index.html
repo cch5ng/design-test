@@ -100,19 +100,9 @@
                 scrolledAmount = $(window).scrollTop();
                 console.log('i am scrolling');
                 console.log('scrolledAmount: ' + scrolledAmount);
-                // if (scrolledAmount < 200) {
-                //     $('nav').removeClass('navbar-transparent');
-                //     $('nav').removeClass('navbar-static');
-                // } else if (scrolledAmount > 200 && scrolledAmount < 400) {
-                //     $('nav').addClass('navbar-transparent');
-                // } else
-                if (scrolledAmount > 0) { //&& scrolledAmount < 400) {
+                if (scrolledAmount > 0 && scrolledAmount < 402) {
                   navTransparent(scrolledAmount);
                 }
-                // if (scrolledAmount >= 400) {
-                //     //$('nav').removeClass('navbar-transparent');
-                //     $('nav').addClass('navbar-static');
-                // }
             });
 
             function navTransparent(scrolledAmount) {
@@ -124,14 +114,8 @@
               if (scrolledAmount > 0 && scrolledAmount <= 200) {
                 console.log('percentToMidBanner: ' + percentToMidBanner);
                 nav.style.backgroundColor = 'rgba(50, 50, 50,' +  opacity + ')';
-                //nav.style.borderColor = 'rgba(231, 231, 231,' +  opacity + ')';
-                //$('nav').css('background-color') = rgba(50, 50, 50, percentToMidBanner);
               } else if (scrolledAmount > 200 & scrolledAmount < 400) {
                 nav.style.backgroundColor = 'rgba(50, 50, 50, 0)';
-                //nav.style.borderColor = 'rgba(231, 231, 231, 0)';
-                // $('nav').css('background-color') = 'rgba(50, 50, 50, 0)';
-                // console.log($('nav').css('background-color'));
-                // console.log(typeof $('nav').css('background-color'));
               } else if (scrolledAmount >= 400) {
                 nav.style.backgroundColor = 'rgba(50, 50, 50, 0.7)';
               }
