@@ -120,8 +120,16 @@ header {
     background-color: rgba(50, 50, 50, 0.7);
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
     color: #000;
+}
+
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: none;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
@@ -132,7 +140,7 @@ header {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-    color: #ccc;
+    color: #fff;
     background-color: rgba(1, 1, 1, 0);
     border: none;
 }
