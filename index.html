@@ -107,12 +107,12 @@
 
             function navTransparent(scrolledAmount) {
               var nav = document.getElementById('top-nav');
-              var percentToMidBanner = (scrolledAmount / 200);
+              var fractionToMidBanner = (scrolledAmount / 200);
               var opacity;
-              opacity = (1 - percentToMidBanner) * 0.3;
+              opacity = (1 - fractionToMidBanner) * 0.3;
 
               if (scrolledAmount > 0 && scrolledAmount <= 200) {
-                console.log('percentToMidBanner: ' + percentToMidBanner);
+//                console.log('fractionToMidBanner: ' + fractionToMidBanner);
                 nav.style.backgroundColor = 'rgba(50, 50, 50,' +  opacity + ')';
               } else if (scrolledAmount > 200 & scrolledAmount < 400) {
                 nav.style.backgroundColor = 'rgba(50, 50, 50, 0)';
