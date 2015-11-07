@@ -106,7 +106,8 @@ header {
     display: block;
     background-image: none;
     background-color: rgba(50, 50, 50, 0.3);
-    border-color: rgba(1, 1, 1, 0);
+    border-color: rgba(231, 231, 231, 0);
+    box-shadow: none;
 }
 
 .navbar-transparent {
@@ -125,6 +126,7 @@ header {
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
     background-image: none;
+    box-shadow: none;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -132,6 +134,15 @@ header {
 .navbar-default .navbar-nav>.active>a:hover {
     color: #ccc;
     background-color: rgba(1, 1, 1, 0);
+    border: none;
+}
+
+.container-fluid {
+  box-shadow: none;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
 }
 
 /* end bootstrap */
