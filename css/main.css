@@ -99,10 +99,33 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.alt-background-color {
+    background-color: #e5e0d1;
+}
+
 header {
     background-image: url('../img/iceland1300x486.jpg');
     height: 483px;
     /* width: 100%; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #ff9966;
+}
+
+h2,
+h4,
+.h4-learning,
+.ul-contact,
+.caption {
+    text-align: center;
+}
+
+.h4-learning {
+    color: #666;
 }
 
 /* bootstrap overwrite */
@@ -163,13 +186,35 @@ header {
     border: none;
 }
 
+.row {
+    padding-bottom: 8px;
+}
+
 /* end bootstrap */
 
 .right {
     text-align: right;
 }
 
+.center {
+    text-align: center;
+}
 
+.underline {
+    text-decoration: underline;
+}
+
+.ul-no-bullets {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.bullet-text-lg {
+    font-size: 1.5em;
+}
 
 
 
@@ -263,6 +308,23 @@ header {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
+
+@media only screen and (min-width: 768px) {
+    /* Style adjustments for viewports that meet the condition */
+    h2,
+    h4,
+    .h4-learning,
+    .ul-contact {
+        text-align: left;
+    }
+
+    .caption {
+        text-align: right;
+    }
+
+
+}
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
