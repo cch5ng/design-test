@@ -17,14 +17,13 @@ function navTransparent(scrolledAmount) {
   var brand = document.getElementById('brand');
   var menuItems = document.getElementsByClassName('menu-item');
   var active = document.getElementsByClassName('active');
-  console.log('menuItems: ' + menuItems);
+  //console.log('menuItems: ' + menuItems);
   var fractionToMidBanner = (scrolledAmount / 200);
   var opacity;
   opacity = (1 - fractionToMidBanner) * 0.3;
 
   if (scrolledAmount > 6 && scrolledAmount <= 200) {
-//                console.log('fractionToMidBanner: ' + fractionToMidBanner);
-//TODO fix so on scroll up to top, all the text displays clearly
+//  console.log('fractionToMidBanner: ' + fractionToMidBanner);
     nav.style.backgroundColor = 'rgba(50, 50, 50,' +  opacity + ')';
     brand.style.color = 'rgba(255, 255, 255,' + opacity + ')';
     Array.prototype.forEach.call(menuItems, function(menuItem) {
