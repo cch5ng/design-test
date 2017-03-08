@@ -95,9 +95,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
 header {
-    background-image: url('../img/susanne_nilsson_rainy_autumn.jpg');
-    height: 400px;
+    background-image: url('../img/iceland1300x486.jpg');
+    height: 483px;
+    /* width: 100%; */
 }
 
 /* bootstrap overwrite */
@@ -128,8 +133,13 @@ header {
     color: #000;
 }
 
-.navbar-brand, .navbar-nav>li>a {
+.navbar-brand,
+.navbar-nav>li>a {
     text-shadow: none;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
@@ -155,7 +165,9 @@ header {
 
 /* end bootstrap */
 
-
+.right {
+    text-align: right;
+}
 
 
 
