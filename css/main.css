@@ -109,11 +109,17 @@ header {
     /* width: 100%; */
 }
 
+#deliverables {
+    background-image: url('../img/aspen1300x486_blur.jpg');
+    height: 483px;
+    padding-top: 12px;
+}
+
 h1,
 h2,
 h3,
 h4 {
-    color: #ff9966;
+    color: #383bdb;/*#ff9966;*/
 }
 
 h2,
@@ -213,7 +219,12 @@ ul {
 }
 
 .bullet-text-lg {
-    font-size: 1.5em;
+    font-size: 2.5em;
+}
+
+.bullet-text-lg:nth-child(1) {
+    font-size: 3em;
+    color: #383bdb;/*#ff9966;*/
 }
 
 
