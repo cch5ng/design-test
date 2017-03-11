@@ -1,5 +1,14 @@
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
+// sass variables
+
+$font-family: 'Raleway', sans-serif;
+$font-logo: 'Poppins', sans-serif;
+$heading-color: #383bdb;
+$heading-sub-color: #666;
+$logo-color: #fff;
+$link-color: #fff;
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -96,7 +105,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: $font-family;
 }
 
 .alt-background-color {
@@ -106,7 +115,6 @@ body {
 header {
     background-image: url('../img/iceland1300x486.jpg');
     height: 483px;
-    /* width: 100%; */
 }
 
 #deliverables {
@@ -119,7 +127,7 @@ h1,
 h2,
 h3,
 h4 {
-    color: #383bdb;/*#ff9966;*/
+    color: $heading-color;
 }
 
 h2,
@@ -131,7 +139,7 @@ h4,
 }
 
 .h4-learning {
-    color: #666;
+    color: $heading-sub-color;
 }
 
 /* bootstrap overwrite */
@@ -145,7 +153,6 @@ h4,
 }
 
 .navbar-transparent {
-    /*background-color: rgba(50, 50, 50, 0);*/
     display: none;
 }
 
@@ -155,11 +162,11 @@ h4,
 }
 
 .navbar-default .navbar-brand {
-    color: #fff;
+    color: $logo-color;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #fff;
+    color: $link-color;
 }
 
 .navbar-brand,
@@ -168,7 +175,7 @@ h4,
 }
 
 .navbar-brand {
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-logo;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
@@ -176,19 +183,19 @@ h4,
     box-shadow: none;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: rgba(1, 1, 1, 0);
-    border: none;
-}
-
 a.menu-item:link,
 a.menu-item:hover,
 a.menu-item:active,
 a.menu-item:visited {
-    color: #fff;
+    color: link-color;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: $link-color;
+    background-color: rgba(1, 1, 1, 0);
+    border: none;
 }
 
 .container-fluid {
@@ -231,17 +238,8 @@ ul {
 
 .bullet-text-lg:nth-child(1) {
     font-size: 3em;
-    color: #383bdb;/*#ff9966;*/
+    color: $heading-color;
 }
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -339,10 +337,7 @@ ul {
     .caption {
         text-align: right;
     }
-
-
 }
-
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),

@@ -78,15 +78,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 .alt-background-color {
   background-color: #e5e0d1; }
 
 header {
   background-image: url("../img/iceland1300x486.jpg");
-  height: 483px;
-  /* width: 100%; */ }
+  height: 483px; }
 
 #deliverables {
   background-image: url("../img/aspen1300x486_blur.jpg");
@@ -97,8 +96,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #383bdb;
-  /*#ff9966;*/ }
+  color: #383bdb; }
 
 h2,
 h4,
@@ -119,7 +117,6 @@ h4,
   box-shadow: none; }
 
 .navbar-transparent {
-  /*background-color: rgba(50, 50, 50, 0);*/
   display: none; }
 
 .navbar-static {
@@ -137,11 +134,17 @@ h4,
   text-shadow: none; }
 
 .navbar-brand {
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
   background-image: none;
   box-shadow: none; }
+
+a.menu-item:link,
+a.menu-item:hover,
+a.menu-item:active,
+a.menu-item:visited {
+  color: link-color; }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
@@ -149,12 +152,6 @@ h4,
   color: #fff;
   background-color: rgba(1, 1, 1, 0);
   border: none; }
-
-a.menu-item:link,
-a.menu-item:hover,
-a.menu-item:active,
-a.menu-item:visited {
-  color: #fff; }
 
 .container-fluid {
   box-shadow: none; }
@@ -186,8 +183,7 @@ ul {
 
 .bullet-text-lg:nth-child(1) {
   font-size: 3em;
-  color: #383bdb;
-  /*#ff9966;*/ }
+  color: #383bdb; }
 
 /* ==========================================================================
    Helper classes
