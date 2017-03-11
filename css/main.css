@@ -112,7 +112,7 @@ header {
 #deliverables {
     background-image: url('../img/aspen1300x486_blur.jpg');
     height: 483px;
-    padding-top: 12px;
+    padding-top: 30px;
 }
 
 h1,
@@ -159,7 +159,7 @@ h4,
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #000;
+    color: #fff;
 }
 
 .navbar-brand,
@@ -182,6 +182,13 @@ h4,
     color: #fff;
     background-color: rgba(1, 1, 1, 0);
     border: none;
+}
+
+a.menu-item:link,
+a.menu-item:hover,
+a.menu-item:active,
+a.menu-item:visited {
+    color: #fff;
 }
 
 .container-fluid {
