@@ -109,11 +109,17 @@ header {
     /* width: 100%; */
 }
 
+#deliverables {
+    background-image: url('../img/aspen1300x486_blur.jpg');
+    height: 483px;
+    padding-top: 30px;
+}
+
 h1,
 h2,
 h3,
 h4 {
-    color: #ff9966;
+    color: #383bdb;/*#ff9966;*/
 }
 
 h2,
@@ -153,7 +159,7 @@ h4,
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #000;
+    color: #fff;
 }
 
 .navbar-brand,
@@ -176,6 +182,13 @@ h4,
     color: #fff;
     background-color: rgba(1, 1, 1, 0);
     border: none;
+}
+
+a.menu-item:link,
+a.menu-item:hover,
+a.menu-item:active,
+a.menu-item:visited {
+    color: #fff;
 }
 
 .container-fluid {
@@ -213,7 +226,12 @@ ul {
 }
 
 .bullet-text-lg {
-    font-size: 1.5em;
+    font-size: 2.5em;
+}
+
+.bullet-text-lg:nth-child(1) {
+    font-size: 3em;
+    color: #383bdb;/*#ff9966;*/
 }
 
 
